@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Conda environments should be rebuilt from environment.yml
+.conda/
+env/
+venv/
+
+# Local secrets and server-only files
+.env
+*.pem
+*.key
+id_rsa*
+
+# Data, model, and log outputs
+data/
+models/
+logs/
+*.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
