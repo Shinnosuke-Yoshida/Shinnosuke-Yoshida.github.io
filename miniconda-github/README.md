@@ -9,7 +9,10 @@ https://shinnosuke-yoshida.github.io/miniconda-github/
 ## 内容
 
 - SSHでサーバーへ接続する流れ
-- Minicondaのインストール
+- 指定ディレクトリへのMinicondaインストール
+- defaultsを外してconda-forgeを使う設定
+- base環境の自動起動を止める設定
+- bash起動時に特定の仮想環境を立ち上げる設定
 - Conda仮想環境の作成
-- パッケージ追加
+- 大気海洋解析向けライブラリの追加
 - よくあるトラブル対応
