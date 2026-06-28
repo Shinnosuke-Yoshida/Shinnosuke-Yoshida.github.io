@@ -3,10 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=/ja/">
   <link rel="canonical" href="https://shinnosuke-yoshida.github.io/ja/">
   <title>𠮷田 槙之助</title>
-  <script>window.location.replace('/ja/');</script>
+  <script>
+    const englishPages = ['/about.html', '/research.html', '/publications.html', '/presentations.html', '/misc.html', '/contact.html'];
+    let destination = '/ja/';
+    try {
+      const previousPath = new URL(document.referrer).pathname;
+      if (englishPages.includes(previousPath)) destination = '/en/';
+    } catch (_) {}
+    window.location.replace(destination);
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url=/ja/"></noscript>
 </head>
 <body>
   <p><a href="/ja/">日本語版ホームページへ移動</a></p>
